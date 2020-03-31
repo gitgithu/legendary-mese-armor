@@ -17,8 +17,8 @@ if minetest.get_modpath("3d_armor") then
         description = S("Legendary Mese Helmet"),
         inventory_image = "leg_mese_helmet_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
-        groups = {armor_head=1, armor_heal=10, armor_use=100, armor_fire=5},
-        armor_groups = {fleshy=15},
+        groups = {armor_head=1, armor_heal=15, armor_use=100, armor_fire=5},
+        armor_groups = {fleshy=20},
         damage_groups = {cracky=2, snappy=1, level=3},
         wear = 0,
     })
@@ -27,7 +27,7 @@ if minetest.get_modpath("3d_armor") then
         description = S("Legendary Mese Chestplate"),
         inventory_image = "leg_mese_chestplate_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
-        groups = {armor_torso=1, armor_heal=10, armor_use=100, armor_fire=5},
+        groups = {armor_torso=1, armor_heal=15, armor_use=200, armor_fire=5},
         armor_groups = {fleshy=20},
         damage_groups = {cracky=2, snappy=1, level=3},
         wear = 0,
@@ -37,7 +37,7 @@ if minetest.get_modpath("3d_armor") then
         description = S("Legendary Mese Leggings"),
         inventory_image = "leg_mese_leggings_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
-        groups = {armor_legs=1, armor_heal=10, armor_use=100, armor_fire=5},
+        groups = {armor_legs=1, armor_heal=15, armor_use=200, armor_fire=5},
         armor_groups = {fleshy=20},
         damage_groups = {cracky=2, snappy=1, level=3},
         wear = 0,
@@ -47,8 +47,8 @@ if minetest.get_modpath("3d_armor") then
         description = S("Legendary Mese Boots"),
         inventory_image = "leg_mese_boots_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
-        groups = {armor_feet=1, armor_heal=10, armor_use=100, armor_fire=5, physics_jump=0.75, physics_speed = 1.1},
-        armor_groups = {fleshy=15},
+        groups = {armor_feet=1, armor_heal=15, armor_use=200, armor_fire=5, physics_jump=0.8, physics_speed = 1.5},
+        armor_groups = {fleshy=20},
 		damage_groups = {cracky=2, snappy=1, level=3},
         wear = 0,
     })
@@ -161,9 +161,9 @@ if minetest.get_modpath("default") then
             full_punch_interval = .5,
             max_drop_level=1,
             groupcaps={
-                snappy={times={[1]=0.5, [2]=0.25, [3]=0}, uses=200, maxlevel=3},
+                snappy={times={[1]=0.0125, [2]=0.0, [3]=0}, uses=200, maxlevel=3},
             },
-            damage_groups = {fleshy=2},
+            damage_groups = {fleshy=15, burn=2},
         },
         sound = {breaks = "default_tool_breaks"},
         groups = {sword = 5}
@@ -232,7 +232,7 @@ end
 if minetest.get_modpath("default") then
     minetest.register_craft({
         type = "shapeless",
-        output = "leg_mese:ingot",
+        output = "leg_mese:ingot 8",
         recipe = {"more_mese:legendary_mese", "more_mese:legendary_mese"}
     })
 end
