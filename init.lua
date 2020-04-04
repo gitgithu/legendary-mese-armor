@@ -17,7 +17,7 @@ if minetest.get_modpath("3d_armor") then
         description = S("Legendary Mese Helmet"),
         inventory_image = "leg_mese_helmet_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
-        groups = {armor_head=1, armor_heal=15, armor_use=100, armor_fire=5},
+        groups = {armor_head=1, armor_heal=15, armor_use=200, armor_fire=5},
         armor_groups = {fleshy=20},
         damage_groups = {cracky=2, snappy=1, level=3},
         wear = 0,
