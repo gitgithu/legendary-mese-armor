@@ -55,7 +55,7 @@ if minetest.get_modpath("3d_armor") then
 
     armor:register_armor("leg_mese:shield", {
         description = S("Legendary Mese Shield"),
-        inventory_image = "leg_mese_shield.png",
+        inventory_image = "leg_mese_shield_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
         groups = {armor_shield=1, armor_heal=20, armor_use=200, armor_fire=10},
         armor_groups = {fleshy=20},
