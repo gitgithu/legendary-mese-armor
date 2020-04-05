@@ -47,13 +47,23 @@ if minetest.get_modpath("3d_armor") then
         description = S("Legendary Mese Boots"),
         inventory_image = "leg_mese_boots_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
-        groups = {armor_feet=1, armor_heal=15, armor_use=200, armor_fire=5, physics_jump=0.8, physics_speed = 1.5},
+        groups = {armor_feet=1, armor_heal=15, armor_use=200, armor_fire=5, physics_jump=0.85, physics_speed = 1.75},
         armor_groups = {fleshy=20},
 		damage_groups = {cracky=2, snappy=1, level=3},
         wear = 0,
     })
 
+    armor:register_armor("leg_mese:shield", {
+        description = S("Legendary Mese Shield"),
+        inventory_image = "leg_mese_shield.png",
+        light_source = 7, -- Texture will have a glow when dropped
+        groups = {armor_shield=1, armor_heal=20, armor_use=200, armor_fire=10},
+        armor_groups = {fleshy=20},
+        damage_groups = {cracky=2, snappy=1, level=3},
+        wear = 0,
+    })
 end
+
 
 --
 -- Armor Crafts
