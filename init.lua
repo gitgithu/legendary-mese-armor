@@ -13,7 +13,7 @@ end
 --
 
 if minetest.get_modpath("3d_armor") then
-    armor:register_armor("leg_mese:helmet", {
+    armor:register_armor("legendary_mese_armor:helmet", {
         description = S("Legendary Mese Helmet"),
         inventory_image = "leg_mese_helmet_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
@@ -23,7 +23,7 @@ if minetest.get_modpath("3d_armor") then
         wear = 0,
     })
 
-    armor:register_armor("leg_mese:chestplate", {
+    armor:register_armor("legendary_mese_armor:chestplate", {
         description = S("Legendary Mese Chestplate"),
         inventory_image = "leg_mese_chestplate_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
@@ -33,7 +33,7 @@ if minetest.get_modpath("3d_armor") then
         wear = 0,
     })
 
-    armor:register_armor("leg_mese:leggings", {
+    armor:register_armor("legendary_mese_armor:leggings", {
         description = S("Legendary Mese Leggings"),
         inventory_image = "leg_mese_leggings_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
@@ -43,7 +43,7 @@ if minetest.get_modpath("3d_armor") then
         wear = 0,
     })
 
-    armor:register_armor("leg_mese:boots", {
+    armor:register_armor("legendary_mese_armor:boots", {
         description = S("Legendary Mese Boots"),
         inventory_image = "leg_mese_boots_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
@@ -53,7 +53,7 @@ if minetest.get_modpath("3d_armor") then
         wear = 0,
     })
 
-    armor:register_armor("leg_mese:shield", {
+    armor:register_armor("legendary_mese_armor:shield", {
         description = S("Legendary Mese Shield"),
         inventory_image = "leg_mese_shield_inv.png",
         light_source = 7, -- Texture will have a glow when dropped
@@ -71,46 +71,46 @@ end
 
 if minetest.get_modpath("3d_armor") then
     minetest.register_craft({
-        output = "leg_mese:helmet",
+        output = "legendary_mese_armor:helmet",
         recipe = {
-            {"leg_mese:ingot", "leg_mese:ingot", "leg_mese:ingot"},
-            {"leg_mese:ingot", "", "leg_mese:ingot"},
+            {"legendary_mese_armor:ingot", "legendary_mese_armor:ingot", "legendary_mese_armor:ingot"},
+            {"legendary_mese_armor:ingot", "", "legendary_mese_armor:ingot"},
             {"", "", ""},
         }
     })
 
     minetest.register_craft({
-        output = "leg_mese:chestplate",
+        output = "legendary_mese_armor:chestplate",
         recipe = {
-            {"leg_mese:ingot", "", "leg_mese:ingot"},
-            {"leg_mese:ingot", "leg_mese:ingot", "leg_mese:ingot"},
-            {"leg_mese:ingot", "leg_mese:ingot", "leg_mese:ingot"},
+            {"legendary_mese_armor:ingot", "", "legendary_mese_armor:ingot"},
+            {"legendary_mese_armor:ingot", "legendary_mese_armor:ingot", "legendary_mese_armor:ingot"},
+            {"legendary_mese_armor:ingot", "legendary_mese_armor:ingot", "legendary_mese_armor:ingot"},
         }
     })
 
     minetest.register_craft({
-        output = "leg_mese:leggings",
+        output = "legendary_mese_armor:leggings",
         recipe = {
-            {"leg_mese:ingot", "leg_mese:ingot", "leg_mese:ingot"},
-            {"leg_mese:ingot", "", "leg_mese:ingot"},
-            {"leg_mese:ingot", "", "leg_mese:ingot"},
+            {"legendary_mese_armor:ingot", "legendary_mese_armor:ingot", "legendary_mese_armor:ingot"},
+            {"legendary_mese_armor:ingot", "", "legendary_mese_armor:ingot"},
+            {"legendary_mese_armor:ingot", "", "legendary_mese_armor:ingot"},
         }
     })
 
     minetest.register_craft({
-        output = "leg_mese:boots",
+        output = "legendary_mese_armor:boots",
         recipe = {
-            {"leg_mese:ingot", "", "leg_mese:ingot"},
-            {"leg_mese:ingot", "", "leg_mese:ingot"},
+            {"legendary_mese_armor:ingot", "", "legendary_mese_armor:ingot"},
+            {"legendary_mese_armor:ingot", "", "legendary_mese_armor:ingot"},
         }
     })
 
     minetest.register_craft({
-        output = "leg_mese:shield",
+        output = "legendary_mese_armor:shield",
         recipe = {
-            {"leg_mese:ingot", "leg_mese:ingot", "leg_mese:ingot"},
-            {"leg_mese:ingot", "leg_mese:ingot", "leg_mese:ingot"},
-            {"", "leg_mese:ingot", ""},
+            {"legendary_mese_armor:ingot", "legendary_mese_armor:ingot", "legendary_mese_armor:ingot"},
+            {"legendary_mese_armor:ingot", "legendary_mese_armor:ingot", "legendary_mese_armor:ingot"},
+            {"", "legendary_mese_armor:ingot", ""},
         }
     })
 end
@@ -119,7 +119,7 @@ end
 -- Tools
 --
 if minetest.get_modpath("default") then
-    minetest.register_tool("leg_mese:pickaxe", {
+    minetest.register_tool("legendary_mese_armor:pickaxe", {
         description = S("Legendary Mese Pickaxe"),
         inventory_image = "leg_mese_pick.png",
         tool_capabilities = {
@@ -134,7 +134,7 @@ if minetest.get_modpath("default") then
         groups = {pickaxe = 5, }
     })
     
-    minetest.register_tool("leg_mese:shovel", {
+    minetest.register_tool("legendary_mese_armor:shovel", {
         description = S("Legendary Mese Shovel"),
         inventory_image = "leg_mese_shovel.png",
         tool_capabilities = {
@@ -149,7 +149,7 @@ if minetest.get_modpath("default") then
         groups = {shovel = 5}
     })
     
-    minetest.register_tool("leg_mese:axe", {
+    minetest.register_tool("legendary_mese_armor:axe", {
         description = S("Legendary Mese Axe"),
         inventory_image = "leg_mese_axe.png",
         tool_capabilities = {
@@ -164,7 +164,7 @@ if minetest.get_modpath("default") then
         groups = {axe = 5}
     })
     
-    minetest.register_tool("leg_mese:sword", {
+    minetest.register_tool("legendary_mese_armor:sword", {
         description = S("Legendary Mese Sword"),
         inventory_image = "leg_mese_sword.png",
         tool_capabilities = {
@@ -186,37 +186,37 @@ end
 --
 if minetest.get_modpath("default") then
     minetest.register_craft({
-        output = "leg_mese:pickaxe",
+        output = "legendary_mese_armor:pickaxe",
         recipe = {
-            {"leg_mese:ingot", "leg_mese:ingot", "leg_mese:ingot"},
+            {"legendary_mese_armor:ingot", "legendary_mese_armor:ingot", "legendary_mese_armor:ingot"},
             {"", "default:stick", ""},
             {"", "default:stick", ""},
         }
     })
     
     minetest.register_craft({
-        output = "leg_mese:axe",
+        output = "legendary_mese_armor:axe",
         recipe = {
-            {"leg_mese:ingot", "leg_mese:ingot", ""},
-            {"leg_mese:ingot", "default:stick", ""},
+            {"legendary_mese_armor:ingot", "legendary_mese_armor:ingot", ""},
+            {"legendary_mese_armor:ingot", "default:stick", ""},
             {"", "default:stick", ""},
         }
     })
     
     minetest.register_craft({
-        output = "leg_mese:shovel",
+        output = "legendary_mese_armor:shovel",
         recipe = {
-            {"", "leg_mese:ingot", ""},
+            {"", "legendary_mese_armor:ingot", ""},
             {"", "default:stick", ""},
             {"", "default:stick", ""},
         }
     })
     
     minetest.register_craft({
-        output = "leg_mese:sword",
+        output = "legendary_mese_armor:sword",
         recipe = {
-            {"", "leg_mese:ingot", ""},
-            {"", "leg_mese:ingot", ""},
+            {"", "legendary_mese_armor:ingot", ""},
+            {"", "legendary_mese_armor:ingot", ""},
             {"", "default:stick", ""},
         }
     })
@@ -228,7 +228,7 @@ end
 --
 
 if minetest.get_modpath("default") then
-    minetest.register_craftitem("leg_mese:ingot", {
+    minetest.register_craftitem("legendary_mese_armor:ingot", {
         description = "Legendary Mese Ingot",
         inventory_image = "leg_mese_ingot.png",
     })
@@ -242,7 +242,7 @@ end
 if minetest.get_modpath("default") then
     minetest.register_craft({
         type = "shapeless",
-        output = "leg_mese:ingot 8",
+        output = "legendary_mese_armor:ingot 8",
         recipe = {"more_mese:legendary_mese", "more_mese:legendary_mese"}
     })
 end
